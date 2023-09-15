@@ -1,0 +1,120 @@
+\documentclass[a4paper,twocolumn,twoside,notitlepage,10pt]{article}
+\usepackage[margin=2cm,columnsep=.5cm]{geometry}
+\usepackage[greek,USenglish]{babel}
+\usepackage[english]{isodate}
+\languageattribute{greek}{ancient}% \usepackage[artemisia]{begingreek}  % https://ctan.math.illinois.edu/macros/latex/contrib/begingreek/begingreek.pdf
+\usepackage{imakeidx}
+%\usepackage[nopostdot,nogroupskip,nonumberlist]{glossaries-extra}
+\usepackage[automake]{glossaries-extra}
+\usepackage{enumitem}
+
+\usepackage{booktabs,caption}
+
+
+
+\title{Cognates of Cleanliness Doctrine}
+\author{K. E. D. Paulsson}
+
+\glsdisablehyper
+\makeglossaries
+
+\indexsetup{level=\section*,toclevel=section}
+\makeindex[name=vicelist,title=Lists with Vices,columns=2]
+\makeindex[name=eng,title=Vices in English,columns=2]
+\makeindex[name=grc,title=Vices in Greek,columns=2]
+
+\setcounter{secnumdepth}{0}
+
+
+\def \tdntBertram {Bertram, Georg}
+
+\begin{document}
+\frenchspacing
+\newcommand{\entlbl}[1]{\index[eng]{#1}\label{itm:#1}}
+\newcommand{\entref}[1]{\emph{#1} ~($\rightarrow$~\pageref{itm:#1})}
+\newcommand{\entrefgls}[1]{\emph{#1}$\rightarrow$\pageref{itm:#1}}
+\newcommand{\grc}[1]{\greektext{#1}\latintext}
+\newcommand{\cdfoot}[2]{\footnote{\emph{CD}, s.v. ``{#1},'' accessed \printdate{#2}.}}
+\newcommand{\bkfoot}[3]{\footnote{{#3}, ``{#1},'' \emph{TDNT} {#2}.}}
+\newcommand{\bksfoot}[2]{\footnote{{#2}, \emph{TDNT} {#1}.}}
+%\newcommand{\cdfoot}[2]{\footnote{\emph{Cambridge Dictionary}, s.v. ``{#1},'' accessed \printdate{#2},\\https://dictionary.cambridge.org/dictionary/english/{#1}.}}
+
+
+\newcommand{\entgls}[1]{\gls{#1} \glsdesc{#1}}
+\newcommand{\entglos}[1]{\\\textbf{\gls{#1}} \glsdesc{#1}}
+
+
+
+\maketitle
+
+\section{Abstract}
+Cleanliness doctrine has set its traces in the modern church teachings without heeding the true
+important message. But has turned into an emotional argument without applicable meaning and
+thereby misleads people to believe things that are unstable in faith.
+
+\section{Abbreviations}
+\begin{description}
+    \item[NA28] Novum Testamentum Graece, Nestle-Aland, 28th ed.
+	\item[NT] The New Testament of the Bible.
+	\item[OT] The Old Testament of the Bible.
+	\item[BW10] BibleWorks 10 bible software with report tool.
+	\item[BNM] BW10 Greek New Testament Morphology.
+\end{description}
+
+\section{Introduction}
+
+\begin{tabular}{@{}l l@{}}
+  \hline
+  Cognates & Antonyms \\
+  \hline
+  \grc{σπίλος} & \grc{ἄσπιλος} \\
+  \grc{σπιλόω} &  \\
+  \hline
+  \grc{μιαίνω} & \grc{ἀμίαντος} \\
+  \hline
+  \grc{καθαρός} & \grc{ἀκάθαρτος} \\
+  \grc{καθαρίζω} & \grc{ἀκαθαρσία} \\
+  \grc{καθαρότης} &  \\
+  \grc{καθαρισμός} &  \\
+  \hline
+  & \grc{ἁγνίζω} \\
+  & \grc{ἁγνεία} \\
+  & \grc{ἁγνότης} \\
+  & \grc{ἁγνός} \\
+  \hline
+  \grc{κοινός} & \\
+  \grc{κοινόω} &  \\
+  \hline
+  \grc{μολύνω} & \\
+  \grc{μολυσμός} &  \\
+  \hline
+  \grc{μῶμος} & \grc{ἄμωμος} \\
+  \hline
+\end{tabular}
+
+\section{Vice Entries}
+%\begin{description}[leftmargin=0pt]
+  % \input{entry/abominable}
+%\end{description}
+
+%\input{section/all_lists}
+%\input{section/vice_index}
+
+\section{Conclusion}
+
+\section{Bibliography}
+% \begin{description}
+	% \item E. Nestle, K. Aland et al., \emph{Novum Testamentum Graece, twenty-eighth edition}. Stuttgart: Deutsche Bibelgesellschaft, 2012.
+	% \item Bushell, Michael S., Jean-Noel Aletti and Andrzej Gieniusz. \emph{BibleWorks Greek New Testament Morphology (BNM)}. 1999-2001. \emph{BibleWorks 10.0.8.755} BibleWorks, 2017.
+	% \item Kittel, Gerhard, and Gerhard Friedrich, eds. \emph{Theological Dictionary of the New Testament}. Translated by Geoffrey W. Bromiley. 10 vols. Grand Rapids: Eerdmans, 1964--1976.
+	% \item Henry George Liddell. Robert Scott.  \emph{A Greek-English Lexicon}. Revised and augmented throughout by Sir Henry Stuart Jones, with the assistance of Roderick McKenzie. Oxford: Clarendon Press, 1940.
+	% \item Thayer, Joseph Henry. \emph{Greek-English Lexicon of the New Testament}. 4th ed. Edinburgh: T. \& T. Clark, 1896.
+	% \item Loder, Charles. \emph{Greek Transliteration}. (Internet). 2022. \emph{greek-transliteration v2.0.0} Greek Transliteration, 2023. https://charlesloder.github.io\\/greekTransliteration/index.html
+% \end{description}
+
+\onecolumn
+% \printindex[vicelist]
+% \printindex[eng]
+%\printindex[grc]
+
+\end{document}
